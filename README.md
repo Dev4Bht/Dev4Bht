@@ -8,9 +8,11 @@
 
 ## About Me
 
-Software Engineer and AI/ML Engineer from Bhutan, passionate about building practical technology solutions through **artificial intelligence**, **software development**, and **cybersecurity**. Interested in emerging technologies, secure systems, entrepreneurship, and technology-driven solutions for real-world challenges.
+<p align="center">
+  <img src="./assets/about-card.svg" alt="Hi, I'm Phurpa. Software Engineer and AI/ML Engineer from Bhutan, passionate about building practical technology solutions through artificial intelligence, software development, and cybersecurity. Founder and CEO of Northuen, Team Lead at TechWiz (ZhingScan), and Bhutan Country Chairperson of the G17 University Ambassadors Consortium." width="100%" />
+</p>
 
-**Software Engineering** &nbsp;·&nbsp; **AI/ML Engineering** &nbsp;·&nbsp; **Cybersecurity**
+<p align="center"><b>Software Engineering</b> &nbsp;·&nbsp; <b>AI/ML Engineering</b> &nbsp;·&nbsp; <b>Cybersecurity</b></p>
 
 ## Technical Skills
 
