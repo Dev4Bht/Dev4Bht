@@ -73,13 +73,13 @@ Software Engineer and AI/ML Engineer from Bhutan, passionate about building prac
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./assets/projects/ai-soc.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; <a href="https://github.com/Dev4Bht/AI_SOC">AI_SOC</a></h3>
+      <h3><img src="./assets/projects/ai-soc.svg" alt="" width="48" height="48" align="absmiddle" />&nbsp; <a href="https://github.com/Dev4Bht/AI_SOC">AI_SOC</a></h3>
       <p>Bhutan Cyber Intelligence Platform: a multi-tenant cyber threat intelligence and attack-surface monitoring platform. Foundation phase complete, with authentication, role-based access, asset registration, and audit logging.</p>
       <p><sub><code>Python</code> · <code>FastAPI</code> · <code>PostgreSQL</code> · <code>Redis</code> · <code>Docker</code></sub></p>
       <p><a href="https://github.com/Dev4Bht/AI_SOC"><b>Repository →</b></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./assets/projects/my-soc.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; <a href="https://github.com/Dev4Bht/My_SOC">My_SOC</a></h3>
+      <h3><img src="./assets/projects/my-soc.svg" alt="" width="48" height="48" align="absmiddle" />&nbsp; <a href="https://github.com/Dev4Bht/My_SOC">My_SOC</a></h3>
       <p>An autonomous security operations center for small organizations. It correlates alerts into incidents, investigates them with a Claude-powered agent over read-only log tools, and surfaces a short list of decisions for a human.</p>
       <p><sub><code>Python</code> · <code>FastAPI</code> · <code>Claude API</code> · <code>Typer</code></sub></p>
       <p><a href="https://github.com/Dev4Bht/My_SOC"><b>Repository →</b></a></p>
@@ -87,20 +87,20 @@ Software Engineer and AI/ML Engineer from Bhutan, passionate about building prac
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./assets/projects/zhingscan.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; ZhingScan</h3>
+      <h3><img src="./assets/projects/zhingscan.svg" alt="" width="48" height="48" align="absmiddle" />&nbsp; ZhingScan</h3>
       <p>An AI-powered crop pest and disease identification assistant designed to support farmers with image-based guidance.</p>
       <p><sub><code>Flutter</code> · <code>Flask</code> · <code>Python</code></sub></p>
       <p><sub>🏆 Winner, RUB Business Incubation Centre Competition<br />Built by TechWiz · <i>Private repository</i></sub></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="./assets/projects/northuen.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; Northuen</h3>
+      <h3><img src="./assets/projects/northuen.svg" alt="" width="48" height="48" align="absmiddle" />&nbsp; Northuen</h3>
       <p>A Bhutan-focused on-demand delivery platform connecting customers, local vendors, and delivery partners for everyday errands and deliveries.</p>
       <p><sub>Founded and led as Founder &amp; CEO</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="./assets/projects/sfarm.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; SFarm</h3>
+      <h3><img src="./assets/projects/sfarm.svg" alt="" width="48" height="48" align="absmiddle" />&nbsp; SFarm</h3>
       <p>An AI-powered smart farming assistant integrating IoT sensors, weather data, and AI to support data-driven agricultural decisions.</p>
       <p><sub>🏆 Top 10, AI4Tarayana</sub></p>
     </td>
