@@ -103,6 +103,33 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
   <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most used languages" width="49%" />
 </p>
 
+## Achievements
+
+<table>
+  <tr>
+    <td width="25%" align="center" valign="top">
+      <img src="./assets/badges/pull-shark.png" alt="Pull Shark" width="90" height="90" /><br />
+      <b>Pull Shark</b><br />
+      <sub>Had pull requests merged</sub>
+    </td>
+    <td width="25%" align="center" valign="top">
+      <img src="./assets/badges/pair-extraordinaire.png" alt="Pair Extraordinaire" width="90" height="90" /><br />
+      <b>Pair Extraordinaire</b><br />
+      <sub>Co-authored a commit on a merged pull request</sub>
+    </td>
+    <td width="25%" align="center" valign="top">
+      <img src="./assets/badges/quickdraw.png" alt="Quickdraw" width="90" height="90" /><br />
+      <b>Quickdraw</b><br />
+      <sub>Closed an issue or pull request within 5 minutes</sub>
+    </td>
+    <td width="25%" align="center" valign="top">
+      <img src="./assets/badges/yolo.png" alt="YOLO" width="90" height="90" /><br />
+      <b>YOLO</b><br />
+      <sub>Merged a pull request without a review</sub>
+    </td>
+  </tr>
+</table>
+
 ## Interests & Focus
 
 <table>
