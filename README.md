@@ -1,11 +1,3 @@
-<p align="center">
-  <img src="./assets/banner.svg" alt="Phurpa Dorji — Software Engineer | AI/ML Engineer, Bhutan" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&duration=3200&pause=1200&color=38BDF8&center=true&vCenter=true&width=640&height=42&lines=Software+Engineer;AI%2FML+Engineer;TypeScript+%7C+Python;Cybersecurity;Building+AI-powered+solutions;Bhutan+%F0%9F%87%A7%F0%9F%87%B9" alt="Software Engineer, AI/ML Engineer, TypeScript | Python, Cybersecurity, Building AI-powered solutions, Bhutan" />
-</p>
-
 ## About Me
 
 <p align="center">
@@ -20,7 +12,7 @@
   <tr>
     <td width="170"><b>Programming</b></td>
     <td>
-      <img src="https://skillicons.dev/icons?i=py,ts,java,dart" alt="Python, TypeScript, Java, Dart" height="40" />
+      <img src="https://skillicons.dev/icons?i=py,ts,java,dart,html,css,js,wordpress,nodejs,express" alt="Python, TypeScript, Java, Dart, HTML, CSS, JavaScript, WordPress, Node.js, Express" height="40" />
     </td>
   </tr>
   <tr>
@@ -36,7 +28,7 @@
   <tr>
     <td><b>Backend</b></td>
     <td>
-      <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,flask" alt="Node.js, Express, FastAPI, Flask" height="40" />
+      <img src="https://skillicons.dev/icons?i=fastapi,flask" alt="FastAPI, Flask" height="40" />
     </td>
   </tr>
   <tr>
@@ -65,7 +57,12 @@
   <tr>
     <td><b>Tools</b></td>
     <td>
-      <img src="https://skillicons.dev/icons?i=git,github,vscode" alt="Git, GitHub, VS Code" height="40" />
+      <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,androidstudio" alt="Git, GitHub, VS Code, Figma, Android Studio" height="40" />
+      <img src="./assets/logos/xcode.svg" alt="Xcode" height="40" />
+      <img src="./assets/logos/jira.svg" alt="Jira" height="40" />
+      <img src="./assets/logos/asana.svg" alt="Asana" height="40" />
+      <img src="./assets/logos/colab.svg" alt="Google Colab" height="40" /><br />
+      <sub>Git · GitHub · VS Code · Figma · Android Studio · Xcode · Jira · Asana · Google Colab · CapCut</sub>
     </td>
   </tr>
 </table>
