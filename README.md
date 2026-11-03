@@ -115,5 +115,8 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
 
 <p>
   <a href="https://github.com/Dev4Bht"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" height="36" /></a>&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/phurpa-dorji-29b666268"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="36" /></a>
+  <a href="https://www.linkedin.com/in/phurpa-dorji-29b666268"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="36" /></a>&nbsp;&nbsp;
+  <a href="mailto:phurpadorji398@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" alt="Email" height="36" /></a>
 </p>
+
+📧 [phurpadorji398@gmail.com](mailto:phurpadorji398@gmail.com) · [phurpa.d@21.tech.bt](mailto:phurpa.d@21.tech.bt)
