@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-labelledby="t">
+  <title id="t">Applied AI research</title>
+  <rect x="0.5" y="0.5" width="55" height="55" rx="12" fill="#172438" stroke="#25364F"/>
+  <g transform="translate(4 4)" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 7 H29"/>
+    <path d="M21 7 V19.5 L11 37.5 Q9.8 41 13.5 41 H34.5 Q38.2 41 37 37.5 L27 19.5 V7"/>
+    <path d="M15.5 31 H32.5"/>
+    <path d="M35 10 V16 M32 13 H38"/>
+  </g>
+</svg>

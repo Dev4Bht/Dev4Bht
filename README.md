@@ -105,11 +105,37 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
 
 ## Interests & Focus
 
-- 🤖 **AI/ML engineering**
-- 🔐 **Secure software architecture**
-- 🛡️ **Cybersecurity automation**
-- 🧩 **Full-stack application development**
-- 🔬 **Applied AI research**
+<table>
+  <tr>
+    <td colspan="2" width="33%" align="center" valign="top">
+      <img src="./assets/interests/ai-ml.svg" alt="" width="56" height="56" /><br />
+      <b>AI/ML Engineering</b><br />
+      <sub>Practical, AI-powered solutions</sub>
+    </td>
+    <td colspan="2" width="33%" align="center" valign="top">
+      <img src="./assets/interests/secure-architecture.svg" alt="" width="56" height="56" /><br />
+      <b>Secure Software Architecture</b><br />
+      <sub>Systems designed to be secure from the start</sub>
+    </td>
+    <td colspan="2" width="33%" align="center" valign="top">
+      <img src="./assets/interests/cybersecurity-automation.svg" alt="" width="56" height="56" /><br />
+      <b>Cybersecurity Automation</b><br />
+      <sub>Automating threat triage and monitoring</sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" width="50%" align="center" valign="top">
+      <img src="./assets/interests/full-stack.svg" alt="" width="56" height="56" /><br />
+      <b>Full-Stack Application Development</b><br />
+      <sub>From APIs to mobile and web apps</sub>
+    </td>
+    <td colspan="3" width="50%" align="center" valign="top">
+      <img src="./assets/interests/applied-ai-research.svg" alt="" width="56" height="56" /><br />
+      <b>Applied AI Research</b><br />
+      <sub>Turning emerging AI techniques into working tools</sub>
+    </td>
+  </tr>
+</table>
 
 ## Connect With Me
 

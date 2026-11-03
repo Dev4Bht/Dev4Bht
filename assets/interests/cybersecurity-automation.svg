@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-labelledby="t">
+  <title id="t">Cybersecurity automation</title>
+  <rect x="0.5" y="0.5" width="55" height="55" rx="12" fill="#172438" stroke="#25364F"/>
+  <g transform="translate(4 4)" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="7" y="11" width="34" height="26" rx="4"/>
+    <path d="M14.5 19.5 L21 25 L14.5 30.5"/>
+    <path d="M25 31 H33.5"/>
+  </g>
+</svg>
