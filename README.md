@@ -168,7 +168,7 @@
       <sub>Member · WFF</sub>
     </td>
     <td width="33%" align="center" valign="top">
-      <img src="./assets/logos/members.svg" alt="" width="200" /><br />
+      <img src="./assets/logos/lcoy.svg" alt="LCOY, YOUNGO Working Group" width="200" /><br />
       <b>Local Conference of Youth</b><br />
       <sub>Member · LCOY</sub>
     </td>
