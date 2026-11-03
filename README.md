@@ -156,9 +156,27 @@
     <td width="42%"><b>Project Leadership</b></td>
     <td>AI/ML and software development projects</td>
   </tr>
+</table>
+
+## Memberships
+
+<table width="100%">
   <tr>
-    <td width="42%"><b>Member</b></td>
-    <td>Evaluation Association of Bhutan</td>
+    <td width="33%" align="center" valign="top">
+      <a href="https://www.world-food-forum.org"><img src="./assets/logos/wff.svg" alt="World Food Forum (WFF)" width="200" /></a><br />
+      <b>World Food Forum</b><br />
+      <sub>Member · WFF</sub>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/logos/members.svg" alt="" width="200" /><br />
+      <b>Local Conference of Youth</b><br />
+      <sub>Member · LCOY</sub>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="./assets/logos/members.svg" alt="" width="200" /><br />
+      <b>Evaluation Association of Bhutan</b><br />
+      <sub>Member</sub>
+    </td>
   </tr>
 </table>
 
