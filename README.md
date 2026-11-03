@@ -60,13 +60,20 @@ I build software and AI-powered solutions focused on solving real-world problems
 ## 📊 GitHub Statistics
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Dev4Bht&show_icons=true&theme=radical&hide_border=true" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dev4Bht&layout=compact&theme=radical&hide_border=true" alt="Most used languages" />
+  <img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Profile details and contribution graph" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Dev4Bht&theme=react-dark&hide_border=true" alt="Contribution graph" />
+  <img src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" width="49%" />
+  <img src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Most productive time of day" width="49%" />
 </p>
+
+<p align="center">
+  <img src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Top languages by repository" width="49%" />
+  <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most committed languages" width="49%" />
+</p>
+
+<p align="center"><sub>Cards refresh automatically every day via GitHub Actions.</sub></p>
 
 ---
 
