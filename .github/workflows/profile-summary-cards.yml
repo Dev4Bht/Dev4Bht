@@ -23,4 +23,27 @@ jobs:
           TIME_ZONE: "Asia/Thimphu"
           THEME: "tokyonight"
           ANIMATION: "fade"
-          AUTO_PUSH: true
+          AUTO_PUSH: false
+
+      # Recolour the generated cards to the profile palette:
+      # panel #172438, single accent #38BDF8.
+      - name: Apply profile palette
+        run: |
+          sed -i -E \
+            -e 's/#1a1b27/#172438/gI' \
+            -e 's/#38bdae/#38bdf8/gI' \
+            -e 's/#bf91f3/#38bdf8/gI' \
+            -e 's/#70a5fd/#7dd3fc/gI' \
+            profile-summary-card-output/tokyonight/*.svg
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-summary-card-output
+          if git diff --cached --quiet; then
+            echo "No card changes"
+          else
+            git commit -m "Update profile summary cards"
+            git push origin HEAD:main
+          fi

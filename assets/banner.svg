@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
+  <title id="t">Phurpa Dorji</title>
+  <desc id="d">Software Engineer | AI/ML Engineer, Bhutan</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#101827"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101827" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#101827" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#101827" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="260" rx="14" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="259" rx="13.5" fill="none" stroke="#1E2D44"/>
+
+  <!-- circuit pattern, right side, kept faint so the name stays dominant -->
+  <g fill="none" stroke="#38BDF8" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1200 40 H1090 L1060 70 H940 L915 95 H820"/>
+    <path d="M1200 90 H1130 L1105 115 H1000 L975 140 H880"/>
+    <path d="M1200 140 H1150 L1120 170 H1030 L1005 195 H900 L875 220 H780"/>
+    <path d="M1200 200 H1170 L1150 220 H1070 L1050 240 H960"/>
+    <path d="M1090 40 V20 M940 70 V30 H880 M1000 115 V150 M1030 170 V210"/>
+  </g>
+  <g fill="#101827" stroke="#38BDF8" stroke-opacity="0.7" stroke-width="2">
+    <circle cx="820" cy="95" r="4"/>
+    <circle cx="880" cy="140" r="4"/>
+    <circle cx="780" cy="220" r="4"/>
+    <circle cx="960" cy="240" r="4"/>
+    <circle cx="880" cy="30" r="4"/>
+    <circle cx="1000" cy="150" r="4"/>
+    <circle cx="1030" cy="210" r="4"/>
+  </g>
+
+  <!-- text -->
+  <g font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <text x="64" y="128" font-size="62" font-weight="700" fill="#E2E8F0" letter-spacing="-1">Phurpa Dorji</text>
+    <rect x="66" y="148" width="120" height="3" rx="1.5" fill="url(#rule)"/>
+    <text x="64" y="190" font-size="26" font-weight="500" fill="#38BDF8">Software Engineer <tspan fill="#64748B">|</tspan> AI/ML Engineer</text>
+    <text x="64" y="222" font-size="16" fill="#94A3B8" letter-spacing="0.5">Bhutan 🇧🇹</text>
+  </g>
+</svg>
