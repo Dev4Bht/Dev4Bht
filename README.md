@@ -23,7 +23,9 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
   </tr>
   <tr>
     <td><b>AI/ML</b></td>
-    <td>Anthropic API (Claude) for LLM agents</td>
+    <td>
+      <img src="./assets/logos/claude.svg" alt="Claude" height="40" /> &nbsp;<sub>Anthropic API (Claude) for LLM agents</sub>
+    </td>
   </tr>
   <tr>
     <td><b>Backend</b></td>
@@ -41,6 +43,12 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
     <td><b>Database</b></td>
     <td>
       <img src="https://skillicons.dev/icons?i=mongodb,supabase" alt="MongoDB, Supabase" height="40" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Cloud</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=aws" alt="AWS" height="40" /> &nbsp;<sub>AWS Certified</sub>
     </td>
   </tr>
   <tr>
