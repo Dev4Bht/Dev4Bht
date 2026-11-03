@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-labelledby="t">
+  <title id="t">SFarm</title>
+  <rect x="0.5" y="0.5" width="55" height="55" rx="12" fill="#172438" stroke="#25364F"/>
+  <g transform="translate(4 4)" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 41 V25"/>
+    <path d="M24 29 C24 21 17.5 17.5 11.5 18.5 C11.5 25.5 17 29.5 24 29 Z"/>
+    <path d="M24 24.5 C24 17.5 30 13.5 37 14.5 C37 21.5 31 25.5 24 24.5 Z"/>
+    <path d="M13 41 H35"/>
+    <path d="M35 7.5 A6 6 0 0 1 41 13.5 M35 3.5 A10 10 0 0 1 45 13.5"/>
+  </g>
+</svg>

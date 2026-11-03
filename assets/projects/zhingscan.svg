@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-labelledby="t">
+  <title id="t">ZhingScan</title>
+  <rect x="0.5" y="0.5" width="55" height="55" rx="12" fill="#172438" stroke="#25364F"/>
+  <g transform="translate(4 4)" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 35 C15 35 13 25 15 17 C25 16 33 21 33 29.5 C33 32.5 29.5 35 24 35 Z"/>
+    <path d="M17 32 L27 22"/>
+    <path d="M7 15 V9.5 H12.5 M35.5 9.5 H41 V15 M7 33 V38.5 H12.5 M41 33 V38.5 H35.5"/>
+  </g>
+</svg>

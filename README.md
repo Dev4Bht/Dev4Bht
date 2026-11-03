@@ -14,17 +14,21 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
 
 ## Technical Skills
 
-<table>
+<table width="100%">
   <tr>
-    <td width="150"><b>Programming</b></td>
+    <td width="170"><b>Programming</b></td>
     <td>
       <img src="https://skillicons.dev/icons?i=py,ts,java,dart" alt="Python, TypeScript, Java, Dart" height="40" />
     </td>
   </tr>
   <tr>
-    <td><b>AI/ML</b></td>
+    <td><b>AI / LLMs</b></td>
     <td>
-      <img src="./assets/logos/claude.svg" alt="Claude" height="40" /> &nbsp;<sub>Anthropic API (Claude) for LLM agents</sub>
+      <img src="./assets/logos/claude.svg" alt="Claude" height="40" />
+      <img src="./assets/logos/openai.svg" alt="ChatGPT" height="40" />
+      <img src="./assets/logos/grok.svg" alt="Grok" height="40" />
+      <img src="./assets/logos/meta.svg" alt="Llama" height="40" /><br />
+      <sub>Claude (Anthropic API, LLM agents) · ChatGPT · Grok · Llama</sub>
     </td>
   </tr>
   <tr>
@@ -42,13 +46,14 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
   <tr>
     <td><b>Database</b></td>
     <td>
-      <img src="https://skillicons.dev/icons?i=mongodb,supabase" alt="MongoDB, Supabase" height="40" />
+      <img src="https://skillicons.dev/icons?i=mongodb,supabase,postgres,redis" alt="MongoDB, Supabase, PostgreSQL, Redis" height="40" />
     </td>
   </tr>
   <tr>
-    <td><b>Cloud</b></td>
+    <td><b>Cloud &amp; DevOps</b></td>
     <td>
-      <img src="https://skillicons.dev/icons?i=aws" alt="AWS" height="40" /> &nbsp;<sub>AWS Certified</sub>
+      <img src="https://skillicons.dev/icons?i=aws,docker,githubactions" alt="AWS, Docker, GitHub Actions" height="40" /><br />
+      <sub>AWS Certified</sub>
     </td>
   </tr>
   <tr>
@@ -65,37 +70,40 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
 
 ## Featured Projects
 
-<table>
+<table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Dev4Bht/AI_SOC">AI_SOC</a></h3>
+      <h3><img src="./assets/projects/ai-soc.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; <a href="https://github.com/Dev4Bht/AI_SOC">AI_SOC</a></h3>
       <p>Bhutan Cyber Intelligence Platform: a multi-tenant cyber threat intelligence and attack-surface monitoring platform. Foundation phase complete, with authentication, role-based access, asset registration, and audit logging.</p>
       <p><sub><code>Python</code> · <code>FastAPI</code> · <code>PostgreSQL</code> · <code>Redis</code> · <code>Docker</code></sub></p>
+      <p><a href="https://github.com/Dev4Bht/AI_SOC"><b>Repository →</b></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Dev4Bht/My_SOC">My_SOC</a></h3>
+      <h3><img src="./assets/projects/my-soc.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; <a href="https://github.com/Dev4Bht/My_SOC">My_SOC</a></h3>
       <p>An autonomous security operations center for small organizations. It correlates alerts into incidents, investigates them with a Claude-powered agent over read-only log tools, and surfaces a short list of decisions for a human.</p>
       <p><sub><code>Python</code> · <code>FastAPI</code> · <code>Claude API</code> · <code>Typer</code></sub></p>
+      <p><a href="https://github.com/Dev4Bht/My_SOC"><b>Repository →</b></a></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>ZhingScan</h3>
+      <h3><img src="./assets/projects/zhingscan.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; ZhingScan</h3>
       <p>An AI-powered crop pest and disease identification assistant designed to support farmers with image-based guidance.</p>
-      <p><sub><code>Flutter</code> · <code>Flask</code> · <code>Python</code> · <i>private repository</i></sub></p>
+      <p><sub><code>Flutter</code> · <code>Flask</code> · <code>Python</code></sub></p>
+      <p><sub><i>Private repository</i></sub></p>
     </td>
     <td width="50%" valign="top">
-      <h3>Northuen</h3>
+      <h3><img src="./assets/projects/northuen.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; Northuen</h3>
       <p>A Bhutan-focused on-demand delivery platform connecting customers, local vendors, and delivery partners for everyday errands and deliveries.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>SFarm</h3>
+      <h3><img src="./assets/projects/sfarm.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; SFarm</h3>
       <p>An AI-powered smart farming assistant integrating IoT sensors, weather data, and AI to support data-driven agricultural decisions.</p>
     </td>
     <td width="50%" valign="middle" align="center">
-      <a href="https://github.com/Dev4Bht?tab=repositories">More repositories →</a>
+      <a href="https://github.com/Dev4Bht?tab=repositories"><b>More repositories →</b></a>
     </td>
   </tr>
 </table>
