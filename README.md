@@ -8,9 +8,9 @@
 
 ## About Me
 
-I'm a Software Engineer and AI/ML Engineer passionate about building practical technology solutions. My interests include **artificial intelligence**, **machine learning**, **cybersecurity**, and **secure software development**.
+Software Engineer and AI/ML Engineer from Bhutan, passionate about building practical technology solutions through **artificial intelligence**, **software development**, and **cybersecurity**. Interested in emerging technologies, secure systems, entrepreneurship, and technology-driven solutions for real-world challenges.
 
-I enjoy transforming ideas into functional products, exploring emerging technologies, and developing solutions that address real-world challenges.
+**Software Engineering** &nbsp;·&nbsp; **AI/ML Engineering** &nbsp;·&nbsp; **Cybersecurity**
 
 ## Technical Skills
 
@@ -90,21 +90,73 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
       <h3><img src="./assets/projects/zhingscan.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; ZhingScan</h3>
       <p>An AI-powered crop pest and disease identification assistant designed to support farmers with image-based guidance.</p>
       <p><sub><code>Flutter</code> · <code>Flask</code> · <code>Python</code></sub></p>
-      <p><sub><i>Private repository</i></sub></p>
+      <p><sub>🏆 Winner, RUB Business Incubation Centre Competition<br />Built by TechWiz · <i>Private repository</i></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><img src="./assets/projects/northuen.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; Northuen</h3>
       <p>A Bhutan-focused on-demand delivery platform connecting customers, local vendors, and delivery partners for everyday errands and deliveries.</p>
+      <p><sub>Founded and led as Founder &amp; CEO</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3><img src="./assets/projects/sfarm.svg" alt="" width="36" height="36" align="absmiddle" />&nbsp; SFarm</h3>
       <p>An AI-powered smart farming assistant integrating IoT sensors, weather data, and AI to support data-driven agricultural decisions.</p>
+      <p><sub>🏆 Top 10, AI4Tarayana</sub></p>
     </td>
     <td width="50%" valign="middle" align="center">
       <a href="https://github.com/Dev4Bht?tab=repositories"><b>More repositories →</b></a>
     </td>
+  </tr>
+</table>
+
+## Honors &amp; Awards
+
+<table width="100%">
+  <tr>
+    <td width="64" align="center"><img src="./assets/projects/trophy.svg" alt="" width="36" height="36" /></td>
+    <td><b>Winner</b> — National Agri-Food Innovation Challenge <sub>2024</sub></td>
+  </tr>
+  <tr>
+    <td width="64" align="center"><img src="./assets/projects/trophy.svg" alt="" width="36" height="36" /></td>
+    <td><b>Winner</b> — RUB Business Incubation Centre Competition <sub>· ZhingScan</sub></td>
+  </tr>
+  <tr>
+    <td width="64" align="center"><img src="./assets/projects/trophy.svg" alt="" width="36" height="36" /></td>
+    <td><b>Best Idea Award</b> — APYDF Bangkok <sub>2024</sub></td>
+  </tr>
+  <tr>
+    <td width="64" align="center"><img src="./assets/projects/trophy.svg" alt="" width="36" height="36" /></td>
+    <td><b>Top 6</b> — Bhutan Startup Launchpad <sub>2026</sub></td>
+  </tr>
+  <tr>
+    <td width="64" align="center"><img src="./assets/projects/trophy.svg" alt="" width="36" height="36" /></td>
+    <td><b>Top 10</b> — AI4Tarayana <sub>· SFarm</sub></td>
+  </tr>
+</table>
+
+## Leadership &amp; Experience
+
+<table width="100%">
+  <tr>
+    <td width="42%"><b>Bhutan Country Chairperson</b></td>
+    <td>G17 University Ambassadors Consortium <sub>2026–2027</sub></td>
+  </tr>
+  <tr>
+    <td width="42%"><b>Founder &amp; CEO</b></td>
+    <td>Northuen</td>
+  </tr>
+  <tr>
+    <td width="42%"><b>Founder, Team Lead &amp; AI Specialist</b></td>
+    <td>TechWiz <sub>· ZhingScan</sub></td>
+  </tr>
+  <tr>
+    <td width="42%"><b>Project Leadership</b></td>
+    <td>AI/ML and software development projects</td>
+  </tr>
+  <tr>
+    <td width="42%"><b>Member</b></td>
+    <td>Evaluation Association of Bhutan</td>
   </tr>
 </table>
 
@@ -119,7 +171,7 @@ I enjoy transforming ideas into functional products, exploring emerging technolo
   <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most used languages" width="49%" />
 </p>
 
-## Achievements
+## GitHub Achievements
 
 <table>
   <tr>

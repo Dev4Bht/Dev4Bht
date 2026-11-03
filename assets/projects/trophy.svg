@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-labelledby="t">
+  <title id="t">Award</title>
+  <rect x="0.5" y="0.5" width="55" height="55" rx="12" fill="#172438" stroke="#25364F"/>
+  <g transform="translate(4 4)" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8 H32 V19 A8 8 0 0 1 16 19 Z"/>
+    <path d="M16 12 H10 V15.5 A6 6 0 0 0 16 21.5 M32 12 H38 V15.5 A6 6 0 0 1 32 21.5"/>
+    <path d="M24 27 V34 M19 34 H29 M16.5 40 H31.5 M19 40 V34 M29 40 V34"/>
+  </g>
+</svg>
