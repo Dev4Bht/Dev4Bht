@@ -170,7 +170,7 @@
       <sub>Member · LCOY</sub>
     </td>
     <td width="33%" align="center" valign="top">
-      <img src="./assets/logos/members.svg" alt="" width="200" /><br />
+      <img src="./assets/logos/eab.svg" alt="Evaluation Association of Bhutan" width="200" /><br />
       <b>Evaluation Association of Bhutan</b><br />
       <sub>Member</sub>
     </td>
