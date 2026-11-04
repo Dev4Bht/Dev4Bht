@@ -28,7 +28,7 @@
   <tr>
     <td><b>Backend</b></td>
     <td>
-      <img src="https://skillicons.dev/icons?i=fastapi,flask" alt="FastAPI, Flask" height="40" />
+      <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,flask" alt="Node.js, Express, FastAPI, Flask" height="40" />
     </td>
   </tr>
   <tr>
