@@ -12,88 +12,138 @@
       <stop offset="0" stop-color="#F59E0B"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#C4A1FF"/>
     </linearGradient>
   </defs>
+  <style>
+    .node{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(.2,.9,.3,1.2) backwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+    .halo{transform-box:fill-box;transform-origin:center;animation:pulse 3.2s ease-in-out infinite}
+    .halo.h3{animation-duration:2s}.halo.h2{animation-duration:2.6s}
+    @keyframes pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+    .orbit{animation:spin 14s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bob{animation:bob 3s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2.5px)}}
+    .flicker{animation:flick 4s ease-in-out infinite}
+    @keyframes flick{0%,100%{opacity:.3}50%{opacity:.55}}
+    .flow{animation:flow 1.6s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-28}}
+    .tw{animation:tw 4s ease-in-out infinite}
+    .tw.t1{animation-duration:5s}.tw.t2{animation-duration:3s}.tw.t3{animation-duration:6s}
+    @keyframes tw{0%,100%{opacity:.1}50%{opacity:.9}}
+    .core{transform-box:fill-box;transform-origin:center;animation:breathe 4s ease-in-out infinite}
+    @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+    .glow{transform-box:fill-box;transform-origin:center;animation:glow 5s ease-in-out infinite}
+    @keyframes glow{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+    .score{animation:score 3s ease-in-out infinite}
+    @keyframes score{0%,100%{stroke-opacity:.5}50%{stroke-opacity:1}}
+    .lvl{animation:lvl 2.4s ease-in-out infinite}
+    @keyframes lvl{0%,100%{opacity:.7}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
     <rect x="1.5" y="1.5" width="868" height="631" rx="22" fill="#0A1020" stroke="url(#frame)" stroke-width="2" stroke-opacity="0.8"/>
-    <circle cx="97" cy="70" r="1.0" fill="#fff" fill-opacity="0.25"/><circle cx="194" cy="123" r="1.4" fill="#fff" fill-opacity="0.35"/><circle cx="291" cy="176" r="0.6" fill="#fff" fill-opacity="0.45"/><circle cx="388" cy="229" r="1.0" fill="#fff" fill-opacity="0.15"/><circle cx="485" cy="282" r="1.4" fill="#fff" fill-opacity="0.25"/><circle cx="582" cy="335" r="0.6" fill="#fff" fill-opacity="0.35"/><circle cx="679" cy="388" r="1.0" fill="#fff" fill-opacity="0.45"/><circle cx="776" cy="441" r="1.4" fill="#fff" fill-opacity="0.15"/><circle cx="2" cy="494" r="0.6" fill="#fff" fill-opacity="0.25"/><circle cx="99" cy="547" r="1.0" fill="#fff" fill-opacity="0.35"/><circle cx="196" cy="600" r="1.4" fill="#fff" fill-opacity="0.45"/><circle cx="293" cy="19" r="0.6" fill="#fff" fill-opacity="0.15"/><circle cx="390" cy="72" r="1.0" fill="#fff" fill-opacity="0.25"/><circle cx="487" cy="125" r="1.4" fill="#fff" fill-opacity="0.35"/><circle cx="584" cy="178" r="0.6" fill="#fff" fill-opacity="0.45"/><circle cx="681" cy="231" r="1.0" fill="#fff" fill-opacity="0.15"/><circle cx="778" cy="284" r="1.4" fill="#fff" fill-opacity="0.25"/><circle cx="4" cy="337" r="0.6" fill="#fff" fill-opacity="0.35"/><circle cx="101" cy="390" r="1.0" fill="#fff" fill-opacity="0.45"/><circle cx="198" cy="443" r="1.4" fill="#fff" fill-opacity="0.15"/><circle cx="295" cy="496" r="0.6" fill="#fff" fill-opacity="0.25"/><circle cx="392" cy="549" r="1.0" fill="#fff" fill-opacity="0.35"/><circle cx="489" cy="602" r="1.4" fill="#fff" fill-opacity="0.45"/><circle cx="586" cy="21" r="0.6" fill="#fff" fill-opacity="0.15"/><circle cx="683" cy="74" r="1.0" fill="#fff" fill-opacity="0.25"/><circle cx="780" cy="127" r="1.4" fill="#fff" fill-opacity="0.35"/><circle cx="6" cy="180" r="0.6" fill="#fff" fill-opacity="0.45"/><circle cx="103" cy="233" r="1.0" fill="#fff" fill-opacity="0.15"/><circle cx="200" cy="286" r="1.4" fill="#fff" fill-opacity="0.25"/><circle cx="297" cy="339" r="0.6" fill="#fff" fill-opacity="0.35"/><circle cx="394" cy="392" r="1.0" fill="#fff" fill-opacity="0.45"/><circle cx="491" cy="445" r="1.4" fill="#fff" fill-opacity="0.15"/><circle cx="588" cy="498" r="0.6" fill="#fff" fill-opacity="0.25"/><circle cx="685" cy="551" r="1.0" fill="#fff" fill-opacity="0.35"/><circle cx="782" cy="604" r="1.4" fill="#fff" fill-opacity="0.45"/><circle cx="8" cy="23" r="0.6" fill="#fff" fill-opacity="0.15"/><circle cx="105" cy="76" r="1.0" fill="#fff" fill-opacity="0.25"/><circle cx="202" cy="129" r="1.4" fill="#fff" fill-opacity="0.35"/><circle cx="299" cy="182" r="0.6" fill="#fff" fill-opacity="0.45"/><circle cx="396" cy="235" r="1.0" fill="#fff" fill-opacity="0.15"/><circle cx="493" cy="288" r="1.4" fill="#fff" fill-opacity="0.25"/><circle cx="590" cy="341" r="0.6" fill="#fff" fill-opacity="0.35"/><circle cx="687" cy="394" r="1.0" fill="#fff" fill-opacity="0.45"/><circle cx="784" cy="447" r="1.4" fill="#fff" fill-opacity="0.15"/><circle cx="10" cy="500" r="0.6" fill="#fff" fill-opacity="0.25"/><circle cx="107" cy="553" r="1.0" fill="#fff" fill-opacity="0.35"/><circle cx="204" cy="606" r="1.4" fill="#fff" fill-opacity="0.45"/><circle cx="301" cy="25" r="0.6" fill="#fff" fill-opacity="0.15"/><circle cx="398" cy="78" r="1.0" fill="#fff" fill-opacity="0.25"/><circle cx="495" cy="131" r="1.4" fill="#fff" fill-opacity="0.35"/><circle cx="592" cy="184" r="0.6" fill="#fff" fill-opacity="0.45"/><circle cx="689" cy="237" r="1.0" fill="#fff" fill-opacity="0.15"/><circle cx="786" cy="290" r="1.4" fill="#fff" fill-opacity="0.25"/><circle cx="12" cy="343" r="0.6" fill="#fff" fill-opacity="0.35"/><circle cx="109" cy="396" r="1.0" fill="#fff" fill-opacity="0.45"/><circle cx="206" cy="449" r="1.4" fill="#fff" fill-opacity="0.15"/><circle cx="303" cy="502" r="0.6" fill="#fff" fill-opacity="0.25"/><circle cx="400" cy="555" r="1.0" fill="#fff" fill-opacity="0.35"/><circle cx="497" cy="608" r="1.4" fill="#fff" fill-opacity="0.45"/><circle cx="594" cy="27" r="0.6" fill="#fff" fill-opacity="0.15"/><circle cx="691" cy="80" r="1.0" fill="#fff" fill-opacity="0.25"/><circle cx="788" cy="133" r="1.4" fill="#fff" fill-opacity="0.35"/><circle cx="14" cy="186" r="0.6" fill="#fff" fill-opacity="0.45"/><circle cx="111" cy="239" r="1.0" fill="#fff" fill-opacity="0.15"/><circle cx="208" cy="292" r="1.4" fill="#fff" fill-opacity="0.25"/><circle cx="305" cy="345" r="0.6" fill="#fff" fill-opacity="0.35"/><circle cx="402" cy="398" r="1.0" fill="#fff" fill-opacity="0.45"/><circle cx="499" cy="451" r="1.4" fill="#fff" fill-opacity="0.15"/><circle cx="596" cy="504" r="0.6" fill="#fff" fill-opacity="0.25"/>
-    <circle cx="428" cy="308" r="190" fill="url(#glow)"/>
+    <circle class="tw t1" cx="97" cy="70" r="1.0" fill="#fff" fill-opacity="0.25" style="animation-delay:0.37s"/><circle class="tw t2" cx="194" cy="123" r="1.4" fill="#fff" fill-opacity="0.35" style="animation-delay:0.74s"/><circle class="tw t3" cx="291" cy="176" r="0.6" fill="#fff" fill-opacity="0.45" style="animation-delay:1.11s"/><circle class="tw t0" cx="388" cy="229" r="1.0" fill="#fff" fill-opacity="0.15" style="animation-delay:1.48s"/><circle class="tw t1" cx="485" cy="282" r="1.4" fill="#fff" fill-opacity="0.25" style="animation-delay:1.85s"/><circle class="tw t2" cx="582" cy="335" r="0.6" fill="#fff" fill-opacity="0.35" style="animation-delay:2.22s"/><circle class="tw t3" cx="679" cy="388" r="1.0" fill="#fff" fill-opacity="0.45" style="animation-delay:2.59s"/><circle class="tw t0" cx="776" cy="441" r="1.4" fill="#fff" fill-opacity="0.15" style="animation-delay:2.96s"/><circle class="tw t1" cx="2" cy="494" r="0.6" fill="#fff" fill-opacity="0.25" style="animation-delay:3.33s"/><circle class="tw t2" cx="99" cy="547" r="1.0" fill="#fff" fill-opacity="0.35" style="animation-delay:3.70s"/><circle class="tw t3" cx="196" cy="600" r="1.4" fill="#fff" fill-opacity="0.45" style="animation-delay:0.07s"/><circle class="tw t0" cx="293" cy="19" r="0.6" fill="#fff" fill-opacity="0.15" style="animation-delay:0.44s"/><circle class="tw t1" cx="390" cy="72" r="1.0" fill="#fff" fill-opacity="0.25" style="animation-delay:0.81s"/><circle class="tw t2" cx="487" cy="125" r="1.4" fill="#fff" fill-opacity="0.35" style="animation-delay:1.18s"/><circle class="tw t3" cx="584" cy="178" r="0.6" fill="#fff" fill-opacity="0.45" style="animation-delay:1.55s"/><circle class="tw t0" cx="681" cy="231" r="1.0" fill="#fff" fill-opacity="0.15" style="animation-delay:1.92s"/><circle class="tw t1" cx="778" cy="284" r="1.4" fill="#fff" fill-opacity="0.25" style="animation-delay:2.29s"/><circle class="tw t2" cx="4" cy="337" r="0.6" fill="#fff" fill-opacity="0.35" style="animation-delay:2.66s"/><circle class="tw t3" cx="101" cy="390" r="1.0" fill="#fff" fill-opacity="0.45" style="animation-delay:3.03s"/><circle class="tw t0" cx="198" cy="443" r="1.4" fill="#fff" fill-opacity="0.15" style="animation-delay:3.40s"/><circle class="tw t1" cx="295" cy="496" r="0.6" fill="#fff" fill-opacity="0.25" style="animation-delay:3.77s"/><circle class="tw t2" cx="392" cy="549" r="1.0" fill="#fff" fill-opacity="0.35" style="animation-delay:0.14s"/><circle class="tw t3" cx="489" cy="602" r="1.4" fill="#fff" fill-opacity="0.45" style="animation-delay:0.51s"/><circle class="tw t0" cx="586" cy="21" r="0.6" fill="#fff" fill-opacity="0.15" style="animation-delay:0.88s"/><circle class="tw t1" cx="683" cy="74" r="1.0" fill="#fff" fill-opacity="0.25" style="animation-delay:1.25s"/><circle class="tw t2" cx="780" cy="127" r="1.4" fill="#fff" fill-opacity="0.35" style="animation-delay:1.62s"/><circle class="tw t3" cx="6" cy="180" r="0.6" fill="#fff" fill-opacity="0.45" style="animation-delay:1.99s"/><circle class="tw t0" cx="103" cy="233" r="1.0" fill="#fff" fill-opacity="0.15" style="animation-delay:2.36s"/><circle class="tw t1" cx="200" cy="286" r="1.4" fill="#fff" fill-opacity="0.25" style="animation-delay:2.73s"/><circle class="tw t2" cx="297" cy="339" r="0.6" fill="#fff" fill-opacity="0.35" style="animation-delay:3.10s"/><circle class="tw t3" cx="394" cy="392" r="1.0" fill="#fff" fill-opacity="0.45" style="animation-delay:3.47s"/><circle class="tw t0" cx="491" cy="445" r="1.4" fill="#fff" fill-opacity="0.15" style="animation-delay:3.84s"/><circle class="tw t1" cx="588" cy="498" r="0.6" fill="#fff" fill-opacity="0.25" style="animation-delay:0.21s"/><circle class="tw t2" cx="685" cy="551" r="1.0" fill="#fff" fill-opacity="0.35" style="animation-delay:0.58s"/><circle class="tw t3" cx="782" cy="604" r="1.4" fill="#fff" fill-opacity="0.45" style="animation-delay:0.95s"/><circle class="tw t0" cx="8" cy="23" r="0.6" fill="#fff" fill-opacity="0.15" style="animation-delay:1.32s"/><circle class="tw t1" cx="105" cy="76" r="1.0" fill="#fff" fill-opacity="0.25" style="animation-delay:1.69s"/><circle class="tw t2" cx="202" cy="129" r="1.4" fill="#fff" fill-opacity="0.35" style="animation-delay:2.06s"/><circle class="tw t3" cx="299" cy="182" r="0.6" fill="#fff" fill-opacity="0.45" style="animation-delay:2.43s"/><circle class="tw t0" cx="396" cy="235" r="1.0" fill="#fff" fill-opacity="0.15" style="animation-delay:2.80s"/><circle class="tw t1" cx="493" cy="288" r="1.4" fill="#fff" fill-opacity="0.25" style="animation-delay:3.17s"/><circle class="tw t2" cx="590" cy="341" r="0.6" fill="#fff" fill-opacity="0.35" style="animation-delay:3.54s"/><circle class="tw t3" cx="687" cy="394" r="1.0" fill="#fff" fill-opacity="0.45" style="animation-delay:3.91s"/><circle class="tw t0" cx="784" cy="447" r="1.4" fill="#fff" fill-opacity="0.15" style="animation-delay:0.28s"/><circle class="tw t1" cx="10" cy="500" r="0.6" fill="#fff" fill-opacity="0.25" style="animation-delay:0.65s"/><circle class="tw t2" cx="107" cy="553" r="1.0" fill="#fff" fill-opacity="0.35" style="animation-delay:1.02s"/><circle class="tw t3" cx="204" cy="606" r="1.4" fill="#fff" fill-opacity="0.45" style="animation-delay:1.39s"/><circle class="tw t0" cx="301" cy="25" r="0.6" fill="#fff" fill-opacity="0.15" style="animation-delay:1.76s"/><circle class="tw t1" cx="398" cy="78" r="1.0" fill="#fff" fill-opacity="0.25" style="animation-delay:2.13s"/><circle class="tw t2" cx="495" cy="131" r="1.4" fill="#fff" fill-opacity="0.35" style="animation-delay:2.50s"/><circle class="tw t3" cx="592" cy="184" r="0.6" fill="#fff" fill-opacity="0.45" style="animation-delay:2.87s"/><circle class="tw t0" cx="689" cy="237" r="1.0" fill="#fff" fill-opacity="0.15" style="animation-delay:3.24s"/><circle class="tw t1" cx="786" cy="290" r="1.4" fill="#fff" fill-opacity="0.25" style="animation-delay:3.61s"/><circle class="tw t2" cx="12" cy="343" r="0.6" fill="#fff" fill-opacity="0.35" style="animation-delay:3.98s"/><circle class="tw t3" cx="109" cy="396" r="1.0" fill="#fff" fill-opacity="0.45" style="animation-delay:0.35s"/><circle class="tw t0" cx="206" cy="449" r="1.4" fill="#fff" fill-opacity="0.15" style="animation-delay:0.72s"/><circle class="tw t1" cx="303" cy="502" r="0.6" fill="#fff" fill-opacity="0.25" style="animation-delay:1.09s"/><circle class="tw t2" cx="400" cy="555" r="1.0" fill="#fff" fill-opacity="0.35" style="animation-delay:1.46s"/><circle class="tw t3" cx="497" cy="608" r="1.4" fill="#fff" fill-opacity="0.45" style="animation-delay:1.83s"/><circle class="tw t0" cx="594" cy="27" r="0.6" fill="#fff" fill-opacity="0.15" style="animation-delay:2.20s"/><circle class="tw t1" cx="691" cy="80" r="1.0" fill="#fff" fill-opacity="0.25" style="animation-delay:2.57s"/><circle class="tw t2" cx="788" cy="133" r="1.4" fill="#fff" fill-opacity="0.35" style="animation-delay:2.94s"/><circle class="tw t3" cx="14" cy="186" r="0.6" fill="#fff" fill-opacity="0.45" style="animation-delay:3.31s"/><circle class="tw t0" cx="111" cy="239" r="1.0" fill="#fff" fill-opacity="0.15" style="animation-delay:3.68s"/><circle class="tw t1" cx="208" cy="292" r="1.4" fill="#fff" fill-opacity="0.25" style="animation-delay:0.05s"/><circle class="tw t2" cx="305" cy="345" r="0.6" fill="#fff" fill-opacity="0.35" style="animation-delay:0.42s"/><circle class="tw t3" cx="402" cy="398" r="1.0" fill="#fff" fill-opacity="0.45" style="animation-delay:0.79s"/><circle class="tw t0" cx="499" cy="451" r="1.4" fill="#fff" fill-opacity="0.15" style="animation-delay:1.16s"/><circle class="tw t1" cx="596" cy="504" r="0.6" fill="#fff" fill-opacity="0.25" style="animation-delay:1.53s"/>
+    <circle class="glow" cx="428" cy="308" r="190" fill="url(#glow)"/>
     <text x="28" y="48" font-size="17" font-weight="700" fill="#E2E8F0" letter-spacing="1">SKILL TREE <tspan fill="#64748B">/</tspan> Dev4Bht</text>
     <text x="28" y="68" font-size="10" fill="#64748B">6/8 unlocked · ring = progress to next tier</text>
-    <rect x="690" y="34" width="150" height="40" rx="10" fill="#0E2A24" fill-opacity="0.7" stroke="#1F5B49"/>
+    <rect x="690" y="34" width="150" height="40" rx="10" fill="#0E2A24" fill-opacity="0.7" stroke="#1F5B49" class="score"/>
     <text x="704" y="50" font-size="8" fill="#64748B" letter-spacing="1">GAMERSCORE</text>
     <text x="704" y="67" font-size="16" font-weight="700" fill="#4ADE80">G 150</text>
-    <line x1="428" y1="308" x2="428" y2="128" stroke="#C97B3C" stroke-opacity="0.35" stroke-width="1.5"/>
-<line x1="428" y1="308" x2="634" y2="180" stroke="#7DB4F5" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line class="flow" x1="428" y1="308" x2="428" y2="128" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.0s"/>
+<circle r="2.6" fill="#C97B3C"><animateMotion dur="2.6s" begin="0.80s" repeatCount="indefinite" path="M428,308 L428,128" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="0.80s" repeatCount="indefinite"/></circle>
+<line class="flow" x1="428" y1="308" x2="634" y2="180" stroke="#7DB4F5" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.2s"/>
+<circle r="2.6" fill="#7DB4F5"><animateMotion dur="3.1s" begin="1.15s" repeatCount="indefinite" path="M428,308 L634,180" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.1s" begin="1.15s" repeatCount="indefinite"/></circle>
 <line x1="428" y1="308" x2="720" y2="308" stroke="#2B3750" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="3 5"/>
-<line x1="428" y1="308" x2="634" y2="435" stroke="#C97B3C" stroke-opacity="0.35" stroke-width="1.5"/>
-<line x1="428" y1="308" x2="428" y2="487" stroke="#C97B3C" stroke-opacity="0.35" stroke-width="1.5"/>
-<line x1="428" y1="308" x2="221" y2="435" stroke="#C97B3C" stroke-opacity="0.35" stroke-width="1.5"/>
-<line x1="428" y1="308" x2="135" y2="308" stroke="#C97B3C" stroke-opacity="0.35" stroke-width="1.5"/>
+<line class="flow" x1="428" y1="308" x2="634" y2="435" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.6s"/>
+<circle r="2.6" fill="#C97B3C"><animateMotion dur="2.6s" begin="1.85s" repeatCount="indefinite" path="M428,308 L634,435" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="1.85s" repeatCount="indefinite"/></circle>
+<line class="flow" x1="428" y1="308" x2="428" y2="487" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.8s"/>
+<circle r="2.6" fill="#C97B3C"><animateMotion dur="3.1s" begin="2.20s" repeatCount="indefinite" path="M428,308 L428,487" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.1s" begin="2.20s" repeatCount="indefinite"/></circle>
+<line class="flow" x1="428" y1="308" x2="221" y2="435" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:1.0s"/>
+<circle r="2.6" fill="#C97B3C"><animateMotion dur="3.6s" begin="2.55s" repeatCount="indefinite" path="M428,308 L221,435" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.6s" begin="2.55s" repeatCount="indefinite"/></circle>
+<line class="flow" x1="428" y1="308" x2="135" y2="308" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:1.2s"/>
+<circle r="2.6" fill="#C97B3C"><animateMotion dur="2.6s" begin="2.90s" repeatCount="indefinite" path="M428,308 L135,308" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="2.90s" repeatCount="indefinite"/></circle>
 <line x1="428" y1="308" x2="221" y2="180" stroke="#2B3750" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="3 5"/>
-<circle cx="428" cy="128" r="39" fill="#C97B3C" fill-opacity="0.16"/>
+<g class="node" style="animation-delay:0.15s">
+<circle cx="428" cy="128" r="39" fill="#C97B3C" fill-opacity="0.16" class="halo h0" style="animation-delay:0.00s"/>
 <circle cx="428" cy="128" r="37" fill="none" stroke="#243047" stroke-width="4"/>
-<circle cx="428" cy="128" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="220.7 232.5" transform="rotate(-90 428 128)"/>
+<circle cx="428" cy="128" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="223.1 232.5" transform="rotate(-90 428 128)"><animate attributeName="stroke-dasharray" from="0 232.5" to="223.1 232.5" dur="1.6s" begin="0.40s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>
 <polygon points="428.0,101.0 451.4,114.5 451.4,141.5 428.0,155.0 404.6,141.5 404.6,114.5" fill="#0E1626" stroke="#C97B3C" stroke-width="2"/>
-<text x="428" y="136" font-size="22" text-anchor="middle" opacity="1">💾</text>
+<text class="bob" x="428" y="136" font-size="22" text-anchor="middle" style="animation-delay:0.00s" opacity="1">💾</text>
 <text x="428" y="54" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Commit Machine</text>
-<text x="428" y="69" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#C97B3C">BRONZE</tspan> · 95 commits</text>
+<text x="428" y="69" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#C97B3C">BRONZE</tspan> · 96 commits</text>
 <text x="428" y="83" font-size="9" text-anchor="middle" fill="#475569">→ Silver at 100</text>
-<circle cx="634" cy="180" r="39" fill="#7DB4F5" fill-opacity="0.16"/>
+</g>
+<g class="node" style="animation-delay:0.27s">
+<circle cx="634" cy="180" r="39" fill="#7DB4F5" fill-opacity="0.16" class="halo h3" style="animation-delay:0.35s"/>
+<circle class="orbit" cx="634" cy="180" r="46" fill="none" stroke="#7DB4F5" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="2 7" style="transform-origin:634px 180px"/>
 <circle cx="634" cy="180" r="37" fill="none" stroke="#243047" stroke-width="4"/>
-<circle cx="634" cy="180" r="37" fill="none" stroke="#7DB4F5" stroke-width="4" stroke-linecap="round" stroke-dasharray="147.9 232.5" transform="rotate(-90 634 180)"/>
+<circle cx="634" cy="180" r="37" fill="none" stroke="#7DB4F5" stroke-width="4" stroke-linecap="round" stroke-dasharray="148.8 232.5" transform="rotate(-90 634 180)"><animate attributeName="stroke-dasharray" from="0 232.5" to="148.8 232.5" dur="1.6s" begin="0.52s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>
 <polygon points="634.0,153.0 657.4,166.5 657.4,193.5 634.0,207.0 610.6,193.5 610.6,166.5" fill="#0E1626" stroke="#7DB4F5" stroke-width="2"/>
-<text x="634" y="188" font-size="22" text-anchor="middle" opacity="1">🔀</text>
+<text class="bob" x="634" y="188" font-size="22" text-anchor="middle" style="animation-delay:0.30s" opacity="1">🔀</text>
 <text x="634" y="236" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Merge Master</text>
-<text x="634" y="251" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#7DB4F5">PLATINUM</tspan> · 818 pull requests</text>
+<text x="634" y="251" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#7DB4F5">PLATINUM</tspan> · 820 pull requests</text>
 <text x="634" y="265" font-size="9" text-anchor="middle" fill="#475569">→ Diamond at 1.0k</text>
+</g>
+<g class="node" style="animation-delay:0.39s">
 <circle cx="720" cy="308" r="39" fill="#3A4558" fill-opacity="0.06"/>
 <circle cx="720" cy="308" r="37" fill="none" stroke="#243047" stroke-width="4"/>
-<circle cx="720" cy="308" r="37" fill="none" stroke="#3A4558" stroke-width="4" stroke-linecap="round" stroke-dasharray="155.0 232.5" transform="rotate(-90 720 308)"/>
+<circle cx="720" cy="308" r="37" fill="none" stroke="#3A4558" stroke-width="4" stroke-linecap="round" stroke-dasharray="155.0 232.5" transform="rotate(-90 720 308)"><animate attributeName="stroke-dasharray" from="0 232.5" to="155.0 232.5" dur="1.6s" begin="0.64s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>
 <polygon points="720.0,281.0 743.4,294.5 743.4,321.5 720.0,335.0 696.6,321.5 696.6,294.5" fill="#0E1626" stroke="#3A4558" stroke-width="2"/>
-<text x="720" y="316" font-size="22" text-anchor="middle" opacity="0.35">🔒</text>
+<text class="flicker" x="720" y="316" font-size="22" text-anchor="middle" style="animation-delay:0.60s" opacity="0.35">🔒</text>
 <text x="720" y="364" font-size="12" font-weight="700" fill="#64748B" text-anchor="middle">Unbreakable</text>
 <text x="720" y="379" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#64748B">LOCKED</tspan> · 2 day streak</text>
 <text x="720" y="393" font-size="9" text-anchor="middle" fill="#475569">→ Bronze at 3</text>
-<circle cx="634" cy="435" r="39" fill="#C97B3C" fill-opacity="0.16"/>
+</g>
+<g class="node" style="animation-delay:0.51s">
+<circle cx="634" cy="435" r="39" fill="#C97B3C" fill-opacity="0.16" class="halo h0" style="animation-delay:1.05s"/>
 <circle cx="634" cy="435" r="37" fill="none" stroke="#243047" stroke-width="4"/>
-<circle cx="634" cy="435" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="46.5 232.5" transform="rotate(-90 634 435)"/>
+<circle cx="634" cy="435" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="46.5 232.5" transform="rotate(-90 634 435)"><animate attributeName="stroke-dasharray" from="0 232.5" to="46.5 232.5" dur="1.6s" begin="0.76s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>
 <polygon points="634.0,408.0 657.4,421.5 657.4,448.5 634.0,462.0 610.6,448.5 610.6,421.5" fill="#0E1626" stroke="#C97B3C" stroke-width="2"/>
-<text x="634" y="443" font-size="22" text-anchor="middle" opacity="1">🎖️</text>
+<text class="bob" x="634" y="443" font-size="22" text-anchor="middle" style="animation-delay:0.90s" opacity="1">🎖️</text>
 <text x="634" y="491" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Veteran</text>
 <text x="634" y="506" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#C97B3C">BRONZE</tspan> · 1.4 years on GitHub</text>
 <text x="634" y="520" font-size="9" text-anchor="middle" fill="#475569">→ Silver at 3</text>
-<circle cx="428" cy="487" r="39" fill="#C97B3C" fill-opacity="0.16"/>
+</g>
+<g class="node" style="animation-delay:0.63s">
+<circle cx="428" cy="487" r="39" fill="#C97B3C" fill-opacity="0.16" class="halo h0" style="animation-delay:1.40s"/>
 <circle cx="428" cy="487" r="37" fill="none" stroke="#243047" stroke-width="4"/>
-<circle cx="428" cy="487" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="206.6 232.5" transform="rotate(-90 428 487)"/>
+<circle cx="428" cy="487" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="206.6 232.5" transform="rotate(-90 428 487)"><animate attributeName="stroke-dasharray" from="0 232.5" to="206.6 232.5" dur="1.6s" begin="0.88s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>
 <polygon points="428.0,460.0 451.4,473.5 451.4,500.5 428.0,514.0 404.6,500.5 404.6,473.5" fill="#0E1626" stroke="#C97B3C" stroke-width="2"/>
-<text x="428" y="495" font-size="22" text-anchor="middle" opacity="1">🏗️</text>
+<text class="bob" x="428" y="495" font-size="22" text-anchor="middle" style="animation-delay:1.20s" opacity="1">🏗️</text>
 <text x="428" y="543" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Service Architect</text>
 <text x="428" y="558" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#C97B3C">BRONZE</tspan> · 9 repositories</text>
 <text x="428" y="572" font-size="9" text-anchor="middle" fill="#475569">→ Silver at 10</text>
-<circle cx="221" cy="435" r="39" fill="#C97B3C" fill-opacity="0.16"/>
+</g>
+<g class="node" style="animation-delay:0.75s">
+<circle cx="221" cy="435" r="39" fill="#C97B3C" fill-opacity="0.16" class="halo h0" style="animation-delay:1.75s"/>
 <circle cx="221" cy="435" r="37" fill="none" stroke="#243047" stroke-width="4"/>
 <polygon points="221.0,408.0 244.4,421.5 244.4,448.5 221.0,462.0 197.6,448.5 197.6,421.5" fill="#0E1626" stroke="#C97B3C" stroke-width="2"/>
-<text x="221" y="443" font-size="22" text-anchor="middle" opacity="1">🐛</text>
+<text class="bob" x="221" y="443" font-size="22" text-anchor="middle" style="animation-delay:1.50s" opacity="1">🐛</text>
 <text x="221" y="491" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Bug Hunter</text>
 <text x="221" y="506" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#C97B3C">BRONZE</tspan> · 1 issue opened</text>
 <text x="221" y="520" font-size="9" text-anchor="middle" fill="#475569">→ Silver at 10</text>
-<circle cx="135" cy="308" r="39" fill="#C97B3C" fill-opacity="0.16"/>
+</g>
+<g class="node" style="animation-delay:0.87s">
+<circle cx="135" cy="308" r="39" fill="#C97B3C" fill-opacity="0.16" class="halo h0" style="animation-delay:2.10s"/>
 <circle cx="135" cy="308" r="37" fill="none" stroke="#243047" stroke-width="4"/>
-<circle cx="135" cy="308" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="77.5 232.5" transform="rotate(-90 135 308)"/>
+<circle cx="135" cy="308" r="37" fill="none" stroke="#C97B3C" stroke-width="4" stroke-linecap="round" stroke-dasharray="77.5 232.5" transform="rotate(-90 135 308)"><animate attributeName="stroke-dasharray" from="0 232.5" to="77.5 232.5" dur="1.6s" begin="1.12s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>
 <polygon points="135.0,281.0 158.4,294.5 158.4,321.5 135.0,335.0 111.6,321.5 111.6,294.5" fill="#0E1626" stroke="#C97B3C" stroke-width="2"/>
-<text x="135" y="316" font-size="22" text-anchor="middle" opacity="1">👥</text>
+<text class="bob" x="135" y="316" font-size="22" text-anchor="middle" style="animation-delay:1.80s" opacity="1">👥</text>
 <text x="135" y="364" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Crowd Puller</text>
 <text x="135" y="379" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#C97B3C">BRONZE</tspan> · 4 followers</text>
 <text x="135" y="393" font-size="9" text-anchor="middle" fill="#475569">→ Silver at 10</text>
+</g>
+<g class="node" style="animation-delay:0.99s">
 <circle cx="221" cy="180" r="39" fill="#3A4558" fill-opacity="0.06"/>
 <circle cx="221" cy="180" r="37" fill="none" stroke="#243047" stroke-width="4"/>
 <polygon points="221.0,153.0 244.4,166.5 244.4,193.5 221.0,207.0 197.6,193.5 197.6,166.5" fill="#0E1626" stroke="#3A4558" stroke-width="2"/>
-<text x="221" y="188" font-size="22" text-anchor="middle" opacity="0.35">🔒</text>
+<text class="flicker" x="221" y="188" font-size="22" text-anchor="middle" style="animation-delay:2.10s" opacity="0.35">🔒</text>
 <text x="221" y="236" font-size="12" font-weight="700" fill="#64748B" text-anchor="middle">Star Collector</text>
 <text x="221" y="251" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#64748B">LOCKED</tspan> · 0 stars earned</text>
 <text x="221" y="265" font-size="9" text-anchor="middle" fill="#475569">→ Bronze at 1</text>
-    <polygon points="428.0,264.0 466.1,286.0 466.1,330.0 428.0,352.0 389.9,330.0 389.9,286.0" fill="#0E1626" stroke="url(#hexring)" stroke-width="3"/>
+</g>
+    <polygon class="core" points="428.0,264.0 466.1,286.0 466.1,330.0 428.0,352.0 389.9,330.0 389.9,286.0" fill="#0E1626" stroke="url(#hexring)" stroke-width="3"/>
     <text x="428" y="310" font-size="22" font-weight="700" fill="#E2E8F0" text-anchor="middle">P.D</text>
-    <text x="428" y="328" font-size="10" font-weight="700" fill="#4ADE80" text-anchor="middle">LVL 4</text>
+    <text x="428" y="328" font-size="10" font-weight="700" fill="#4ADE80" text-anchor="middle" class="lvl">LVL 4</text>
     <g font-size="10" fill="#64748B">
       <circle cx="30" cy="607" r="4" fill="#C97B3C"/><text x="40" y="611">Bronze</text>
       <circle cx="104" cy="607" r="4" fill="#CBD5E1"/><text x="114" y="611">Silver</text>

@@ -97,24 +97,30 @@ def hexpoints(cx, cy, r):
     return " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
 
 
-def node(skill, cx, cy, label_above):
+def node(skill, cx, cy, label_above, idx=0):
     name, icon, value, unit, th = skill
     tier, prog, nxt = evaluate(value, th)
     locked = tier < 0
     col = "#3A4558" if locked else TIER_COLOR[tier]
     R = 37
     circ = 2 * math.pi * R
-    o = []
-    o.append(f'<circle cx="{cx}" cy="{cy}" r="{R+2}" fill="{col}" fill-opacity="{0.06 if locked else 0.16}"/>')
+    o = [f'<g class="node" style="animation-delay:{0.15 + idx * 0.12:.2f}s">']
+    halo = "" if locked else f' class="halo h{min(tier, 3)}" style="animation-delay:{idx * 0.35:.2f}s"'
+    o.append(f'<circle cx="{cx}" cy="{cy}" r="{R+2}" fill="{col}" fill-opacity="{0.06 if locked else 0.16}"{halo}/>')
+    if tier >= 3:
+        o.append(f'<circle class="orbit" cx="{cx}" cy="{cy}" r="{R+9}" fill="none" stroke="{col}" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="2 7" style="transform-origin:{cx}px {cy}px"/>')
     o.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="#243047" stroke-width="4"/>')
     if prog > 0:
         o.append(
             f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{col}" stroke-width="4" stroke-linecap="round" '
-            f'stroke-dasharray="{circ*prog:.1f} {circ:.1f}" transform="rotate(-90 {cx} {cy})"/>'
+            f'stroke-dasharray="{circ*prog:.1f} {circ:.1f}" transform="rotate(-90 {cx} {cy})">'
+            f'<animate attributeName="stroke-dasharray" from="0 {circ:.1f}" to="{circ*prog:.1f} {circ:.1f}" '
+            f'dur="1.6s" begin="{0.4 + idx * 0.12:.2f}s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>'
         )
     o.append(f'<polygon points="{hexpoints(cx, cy, 27)}" fill="#0E1626" stroke="{col}" stroke-width="2"/>')
     o.append(
-        f'<text x="{cx}" y="{cy+8}" font-size="22" text-anchor="middle" opacity="{0.35 if locked else 1}">{"🔒" if locked else icon}</text>'
+        f'<text class="{"flicker" if locked else "bob"}" x="{cx}" y="{cy+8}" font-size="22" text-anchor="middle" '
+        f'style="animation-delay:{idx * 0.3:.2f}s" opacity="{0.35 if locked else 1}">{"🔒" if locked else icon}</text>'
     )
     # label block
     ty = cy - 74 if label_above else cy + 56
@@ -131,7 +137,38 @@ def node(skill, cx, cy, label_above):
         f'<tspan font-weight="700" fill="{tcol}">{tier_txt}</tspan> · {status}</text>'
     )
     o.append(f'<text x="{cx}" y="{ty+29}" font-size="9" text-anchor="middle" fill="#475569">{foot}</text>')
+    o.append("</g>")
     return "\n".join(o), tier
+
+
+STYLE = """  <style>
+    .node{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(.2,.9,.3,1.2) backwards}
+    @keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+    .halo{transform-box:fill-box;transform-origin:center;animation:pulse 3.2s ease-in-out infinite}
+    .halo.h3{animation-duration:2s}.halo.h2{animation-duration:2.6s}
+    @keyframes pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+    .orbit{animation:spin 14s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bob{animation:bob 3s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2.5px)}}
+    .flicker{animation:flick 4s ease-in-out infinite}
+    @keyframes flick{0%,100%{opacity:.3}50%{opacity:.55}}
+    .flow{animation:flow 1.6s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-28}}
+    .tw{animation:tw 4s ease-in-out infinite}
+    .tw.t1{animation-duration:5s}.tw.t2{animation-duration:3s}.tw.t3{animation-duration:6s}
+    @keyframes tw{0%,100%{opacity:.1}50%{opacity:.9}}
+    .core{transform-box:fill-box;transform-origin:center;animation:breathe 4s ease-in-out infinite}
+    @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+    .glow{transform-box:fill-box;transform-origin:center;animation:glow 5s ease-in-out infinite}
+    @keyframes glow{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+    .score{animation:score 3s ease-in-out infinite}
+    @keyframes score{0%,100%{stroke-opacity:.5}50%{stroke-opacity:1}}
+    .lvl{animation:lvl 2.4s ease-in-out infinite}
+    @keyframes lvl{0%,100%{opacity:.7}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+"""
 
 
 def render(u):
@@ -139,22 +176,29 @@ def render(u):
     tiers = []
     body = []
     # connector lines first
-    for (x, y), s in zip(POS, skills):
+    for i, ((x, y), s) in enumerate(zip(POS, skills)):
         t, _, _ = evaluate(s[2], s[4])
         col = "#2B3750" if t < 0 else TIER_COLOR[t]
-        dash = ' stroke-dasharray="3 5"' if t < 0 else ""
-        body.append(f'<line x1="{CX}" y1="{CY}" x2="{x}" y2="{y}" stroke="{col}" stroke-opacity="{0.35 if t>=0 else 0.6}" stroke-width="1.5"{dash}/>')
+        if t < 0:
+            body.append(f'<line x1="{CX}" y1="{CY}" x2="{x}" y2="{y}" stroke="{col}" stroke-opacity="0.6" stroke-width="1.5" stroke-dasharray="3 5"/>')
+        else:
+            body.append(f'<line class="flow" x1="{CX}" y1="{CY}" x2="{x}" y2="{y}" stroke="{col}" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:{i*0.2:.1f}s"/>')
+            body.append(
+                f'<circle r="2.6" fill="{col}"><animateMotion dur="{2.6 + (i % 3) * 0.5:.1f}s" begin="{0.8 + i * 0.35:.2f}s" repeatCount="indefinite" '
+                f'path="M{CX},{CY} L{x},{y}" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/>'
+                f'<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="{2.6 + (i % 3) * 0.5:.1f}s" begin="{0.8 + i * 0.35:.2f}s" repeatCount="indefinite"/></circle>'
+            )
     for i, ((x, y), s) in enumerate(zip(POS, skills)):
         # labels go below nodes in the lower half and above in the upper-half top node
         label_above = i == 0
-        svg, t = node(s, x, y, label_above)
+        svg, t = node(s, x, y, label_above, i)
         tiers.append(t)
         body.append(svg)
     unlocked = sum(1 for t in tiers if t >= 0)
     score = sum(TIER_POINTS[t] for t in tiers if t >= 0)
     level = 1 + score // 50
     stars = "".join(
-        f'<circle cx="{(i*97)%W}" cy="{(i*53+17)%H}" r="{0.6 + (i%3)*0.4:.1f}" fill="#fff" fill-opacity="{0.15 + (i%4)*0.1:.2f}"/>'
+        f'<circle class="tw t{i%4}" cx="{(i*97)%W}" cy="{(i*53+17)%H}" r="{0.6 + (i%3)*0.4:.1f}" fill="#fff" fill-opacity="{0.15 + (i%4)*0.1:.2f}" style="animation-delay:{(i*0.37)%4:.2f}s"/>'
         for i in range(1, 70)
     )
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="t d">
@@ -171,19 +215,19 @@ def render(u):
       <stop offset="0" stop-color="#F59E0B"/><stop offset="0.5" stop-color="#38BDF8"/><stop offset="1" stop-color="#C4A1FF"/>
     </linearGradient>
   </defs>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+{STYLE}  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
     <rect x="1.5" y="1.5" width="{W-3}" height="{H-3}" rx="22" fill="#0A1020" stroke="url(#frame)" stroke-width="2" stroke-opacity="0.8"/>
     {stars}
-    <circle cx="{CX}" cy="{CY}" r="190" fill="url(#glow)"/>
+    <circle class="glow" cx="{CX}" cy="{CY}" r="190" fill="url(#glow)"/>
     <text x="28" y="48" font-size="17" font-weight="700" fill="#E2E8F0" letter-spacing="1">SKILL TREE <tspan fill="#64748B">/</tspan> {LOGIN}</text>
     <text x="28" y="68" font-size="10" fill="#64748B">{unlocked}/8 unlocked · ring = progress to next tier</text>
-    <rect x="690" y="34" width="150" height="40" rx="10" fill="#0E2A24" fill-opacity="0.7" stroke="#1F5B49"/>
+    <rect x="690" y="34" width="150" height="40" rx="10" fill="#0E2A24" fill-opacity="0.7" stroke="#1F5B49" class="score"/>
     <text x="704" y="50" font-size="8" fill="#64748B" letter-spacing="1">GAMERSCORE</text>
     <text x="704" y="67" font-size="16" font-weight="700" fill="#4ADE80">G {score}</text>
     {chr(10).join(body)}
-    <polygon points="{hexpoints(CX, CY, 44)}" fill="#0E1626" stroke="url(#hexring)" stroke-width="3"/>
+    <polygon class="core" points="{hexpoints(CX, CY, 44)}" fill="#0E1626" stroke="url(#hexring)" stroke-width="3"/>
     <text x="{CX}" y="{CY+2}" font-size="22" font-weight="700" fill="#E2E8F0" text-anchor="middle">{INITIALS}</text>
-    <text x="{CX}" y="{CY+20}" font-size="10" font-weight="700" fill="#4ADE80" text-anchor="middle">LVL {level}</text>
+    <text x="{CX}" y="{CY+20}" font-size="10" font-weight="700" fill="#4ADE80" text-anchor="middle" class="lvl">LVL {level}</text>
     <g font-size="10" fill="#64748B">
       <circle cx="30" cy="607" r="4" fill="{TIER_COLOR[0]}"/><text x="40" y="611">Bronze</text>
       <circle cx="104" cy="607" r="4" fill="{TIER_COLOR[1]}"/><text x="114" y="611">Silver</text>
