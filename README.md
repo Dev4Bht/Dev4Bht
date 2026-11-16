@@ -188,6 +188,12 @@
   <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most used languages" width="49%" />
 </p>
 
+## Skill Tree
+
+<p align="center">
+  <img src="./assets/skill-tree.svg" alt="GitHub skill tree for Dev4Bht: commits, pull requests, followers, repositories and more, with tier progress" width="100%" />
+</p>
+
 ## GitHub Achievements
 
 <table>
