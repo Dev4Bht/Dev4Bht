@@ -44,6 +44,31 @@ def fetch():
         return json.load(r)["data"]["user"]
 
 
+YEAR_QUERY = """query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){
+  contributionsCollection(from:$from,to:$to){contributionCalendar{weeks{contributionDays{contributionCount date}}}}}}"""
+
+
+def gql(query, variables):
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode(),
+        headers={"Authorization": f"bearer {token()}", "User-Agent": "skill-tree"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)["data"]["user"]
+
+
+def all_days(created_year):
+    """Contribution count per date for every year since the account was created."""
+    out = {}
+    for y in range(created_year, datetime.now(timezone.utc).year + 1):
+        u = gql(YEAR_QUERY, {"login": LOGIN, "from": f"{y}-01-01T00:00:00Z", "to": f"{y}-12-31T23:59:59Z"})
+        for w in u["contributionsCollection"]["contributionCalendar"]["weeks"]:
+            for d in w["contributionDays"]:
+                out[d["date"]] = d["contributionCount"]
+    return out
+
+
 def avatar_b64():
     import base64
     req = urllib.request.Request(f"https://github.com/{LOGIN}.png?size=160", headers={"User-Agent": "skill-tree"})
@@ -75,12 +100,12 @@ def evaluate(value, thresholds):
 
 def build_skills(u):
     c = u["contributionsCollection"]
-    days = [d["contributionCount"] for w in c["contributionCalendar"]["weeks"] for d in w["contributionDays"]]
-    best = cur = 0
-    for n in days:
-        cur = cur + 1 if n > 0 else 0
-        best = max(best, cur)
     created = datetime.fromisoformat(u["createdAt"].replace("Z", "+00:00"))
+    per_day = all_days(created.year)  # every contribution since the account was created
+    best = cur = 0
+    for date in sorted(per_day):
+        cur = cur + 1 if per_day[date] > 0 else 0
+        best = max(best, cur)
     years = (datetime.now(timezone.utc) - created).days / 365.25
     repos = u["repositories"]
     stars = sum(n["stargazerCount"] for n in repos["nodes"])
