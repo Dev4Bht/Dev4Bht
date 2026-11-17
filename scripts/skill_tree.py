@@ -44,6 +44,16 @@ def fetch():
         return json.load(r)["data"]["user"]
 
 
+def avatar_b64():
+    import base64
+    req = urllib.request.Request(f"https://github.com/{LOGIN}.png?size=160", headers={"User-Agent": "skill-tree"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return base64.b64encode(r.read()).decode(), r.headers.get_content_type()
+    except Exception:
+        return None, None
+
+
 def fmt(n):
     if isinstance(n, float):
         return f"{n:.1f}"
@@ -201,6 +211,13 @@ def render(u):
         f'<circle class="tw t{i%4}" cx="{(i*97)%W}" cy="{(i*53+17)%H}" r="{0.6 + (i%3)*0.4:.1f}" fill="#fff" fill-opacity="{0.15 + (i%4)*0.1:.2f}" style="animation-delay:{(i*0.37)%4:.2f}s"/>'
         for i in range(1, 70)
     )
+    b64, mime = avatar_b64()
+    if b64:
+        center = (f'<clipPath id="av"><polygon points="{hexpoints(CX, CY, 42)}"/></clipPath>'
+                  f'<image x="{CX-42}" y="{CY-42}" width="84" height="84" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice" '
+                  f'href="data:{mime};base64,{b64}"/>')
+    else:
+        center = (f'<text x="{CX}" y="{CY+8}" font-size="22" font-weight="700" fill="#E2E8F0" text-anchor="middle">{INITIALS}</text>')
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="t d">
   <title id="t">{LOGIN} skill tree</title>
   <desc id="d">{unlocked} of 8 GitHub achievements unlocked, gamerscore {score}, level {level}</desc>
@@ -225,9 +242,12 @@ def render(u):
     <text x="704" y="50" font-size="8" fill="#64748B" letter-spacing="1">GAMERSCORE</text>
     <text x="704" y="67" font-size="16" font-weight="700" fill="#4ADE80">G {score}</text>
     {chr(10).join(body)}
-    <polygon class="core" points="{hexpoints(CX, CY, 44)}" fill="#0E1626" stroke="url(#hexring)" stroke-width="3"/>
-    <text x="{CX}" y="{CY+2}" font-size="22" font-weight="700" fill="#E2E8F0" text-anchor="middle">{INITIALS}</text>
-    <text x="{CX}" y="{CY+20}" font-size="10" font-weight="700" fill="#4ADE80" text-anchor="middle" class="lvl">LVL {level}</text>
+    <g class="core">
+      <polygon points="{hexpoints(CX, CY, 46)}" fill="#0E1626" stroke="url(#hexring)" stroke-width="3"/>
+      {center}
+    </g>
+    <rect x="{CX-24}" y="{CY+38}" width="48" height="18" rx="9" fill="#0A1020" stroke="#1F5B49"/>
+    <text x="{CX}" y="{CY+51}" font-size="10" font-weight="700" fill="#4ADE80" text-anchor="middle" class="lvl">LVL {level}</text>
     <g font-size="10" fill="#64748B">
       <circle cx="30" cy="607" r="4" fill="{TIER_COLOR[0]}"/><text x="40" y="611">Bronze</text>
       <circle cx="104" cy="607" r="4" fill="{TIER_COLOR[1]}"/><text x="114" y="611">Silver</text>
