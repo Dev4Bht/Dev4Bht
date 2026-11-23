@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="871" height="634" viewBox="0 0 871 634" role="img" aria-labelledby="t d">
   <title id="t">Dev4Bht skill tree</title>
-  <desc id="d">7 of 8 GitHub achievements unlocked, gamerscore 100, level 3</desc>
+  <desc id="d">7 of 8 GitHub achievements unlocked, gamerscore 125, level 3</desc>
   <defs>
     <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#C97B3C"/><stop offset="0.35" stop-color="#38BDF8"/><stop offset="0.7" stop-color="#7DB4F5"/><stop offset="1" stop-color="#C4A1FF"/>
@@ -47,13 +47,13 @@
     <text x="28" y="68" font-size="10" fill="#64748B">7/8 unlocked · ring = progress to next tier</text>
     <rect x="690" y="34" width="150" height="40" rx="10" fill="#0E2A24" fill-opacity="0.7" stroke="#1F5B49" class="score"/>
     <text x="704" y="50" font-size="8" fill="#64748B" letter-spacing="1">GAMERSCORE</text>
-    <text x="704" y="67" font-size="16" font-weight="700" fill="#4ADE80">G 100</text>
+    <text x="704" y="67" font-size="16" font-weight="700" fill="#4ADE80">G 125</text>
     <line class="flow" x1="428" y1="308" x2="428" y2="128" stroke="#CBD5E1" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.0s"/>
 <circle r="2.6" fill="#CBD5E1"><animateMotion dur="2.6s" begin="0.80s" repeatCount="indefinite" path="M428,308 L428,128" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="0.80s" repeatCount="indefinite"/></circle>
 <line class="flow" x1="428" y1="308" x2="634" y2="180" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.2s"/>
 <circle r="2.6" fill="#C97B3C"><animateMotion dur="3.1s" begin="1.15s" repeatCount="indefinite" path="M428,308 L634,180" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.1s" begin="1.15s" repeatCount="indefinite"/></circle>
-<line class="flow" x1="428" y1="308" x2="720" y2="308" stroke="#CBD5E1" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.4s"/>
-<circle r="2.6" fill="#CBD5E1"><animateMotion dur="3.6s" begin="1.50s" repeatCount="indefinite" path="M428,308 L720,308" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.6s" begin="1.50s" repeatCount="indefinite"/></circle>
+<line class="flow" x1="428" y1="308" x2="720" y2="308" stroke="#E0A93B" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.4s"/>
+<circle r="2.6" fill="#E0A93B"><animateMotion dur="3.6s" begin="1.50s" repeatCount="indefinite" path="M428,308 L720,308" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.6s" begin="1.50s" repeatCount="indefinite"/></circle>
 <line class="flow" x1="428" y1="308" x2="634" y2="435" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.6s"/>
 <circle r="2.6" fill="#C97B3C"><animateMotion dur="2.6s" begin="1.85s" repeatCount="indefinite" path="M428,308 L634,435" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="1.85s" repeatCount="indefinite"/></circle>
 <line class="flow" x1="428" y1="308" x2="428" y2="487" stroke="#C97B3C" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 8" style="animation-delay:0.8s"/>
@@ -83,14 +83,13 @@
 <text x="634" y="265" font-size="9" text-anchor="middle" fill="#475569">→ Silver at 10</text>
 </g>
 <g class="node" style="animation-delay:0.39s">
-<circle cx="720" cy="308" r="39" fill="#CBD5E1" fill-opacity="0.16" class="halo h1" style="animation-delay:0.70s"/>
+<circle cx="720" cy="308" r="39" fill="#E0A93B" fill-opacity="0.16" class="halo h2" style="animation-delay:0.70s"/>
 <circle cx="720" cy="308" r="37" fill="none" stroke="#243047" stroke-width="4"/>
-<circle cx="720" cy="308" r="37" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" stroke-dasharray="203.4 232.5" transform="rotate(-90 720 308)"><animate attributeName="stroke-dasharray" from="0 232.5" to="203.4 232.5" dur="1.6s" begin="0.64s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></circle>
-<polygon points="720.0,281.0 743.4,294.5 743.4,321.5 720.0,335.0 696.6,321.5 696.6,294.5" fill="#0E1626" stroke="#CBD5E1" stroke-width="2"/>
+<polygon points="720.0,281.0 743.4,294.5 743.4,321.5 720.0,335.0 696.6,321.5 696.6,294.5" fill="#0E1626" stroke="#E0A93B" stroke-width="2"/>
 <text class="bob" x="720" y="316" font-size="22" text-anchor="middle" style="animation-delay:0.60s" opacity="1">🔥</text>
 <text x="720" y="364" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Unbreakable</text>
-<text x="720" y="379" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#CBD5E1">SILVER</tspan> · 28 day streak</text>
-<text x="720" y="393" font-size="9" text-anchor="middle" fill="#475569">→ Gold at 30</text>
+<text x="720" y="379" font-size="10" text-anchor="middle" fill="#64748B"><tspan font-weight="700" fill="#E0A93B">GOLD</tspan> · 30 day streak</text>
+<text x="720" y="393" font-size="9" text-anchor="middle" fill="#475569">→ Platinum at 60</text>
 </g>
 <g class="node" style="animation-delay:0.51s">
 <circle cx="634" cy="435" r="39" fill="#C97B3C" fill-opacity="0.16" class="halo h0" style="animation-delay:1.05s"/>
